@@ -404,7 +404,7 @@ img {
    9. GameDev video embed
    ============================================================ */
 .video-wrapper {
-  max-width: 80rem;
+  max-width: 90rem;
   margin: 0 auto 2rem;
   position: relative;
   width: 100%;
@@ -424,11 +424,11 @@ img {
   border: none;
   border-top: 1px solid var(--color-border);
   margin: 3rem auto;
-  max-width: 80rem;
+  max-width: 90rem;
 }
 
 .video-caption {
-  max-width: 80rem;
+  max-width: 90rem;
   margin: 0 auto 4rem;
   text-align: center;
   font-size: 1.6rem;
