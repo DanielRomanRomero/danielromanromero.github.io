@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Daniel Román Romero — Desarrollador Unity, C# y Web">
+  <title>Daniel Román Romero — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="navbar__nav" aria-label="Main navigation">
+      <ul class="navbar__list">
+        <li><a href="index.html" data-i18n="nav.home"></a></li>
+        <li><a href="gamedev.html" data-i18n="nav.gamedev"></a></li>
+        <li><a href="web.html" data-i18n="nav.web"></a></li>
+        <li><a href="apps.html" data-i18n="nav.apps"></a></li>
+        <li><a href="index.html#skills" data-i18n="nav.skills"></a></li>
+      </ul>
+      <button class="navbar__lang-toggle" id="lang-toggle" aria-label="Toggle language" data-i18n="nav.lang_toggle"></button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <div class="profile">
+          <div class="profile__circle">
+            <img src="assets/img/img_profile.png" alt="Daniel Román Romero">
+          </div>
+          <div>
+            <h1 class="profile__name">Daniel Román Romero</h1>
+<p class="profile__bio" data-i18n="index.bio"></p>
+          </div>
+        </div>
+
+        <nav class="social" aria-label="Social links">
+          <a href="https://github.com/DanielRomanRomero" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            <span data-i18n="index.social.github"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/daniel-roman-unity-developer/" class="social__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            <span data-i18n="index.social.linkedin"></span>
+          </a>
+          <a href="mailto:danielromanromero1@gmail.com" class="social__link" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            <span data-i18n="index.social.email"></span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="nav-cards">
+      <div class="container">
+        <div class="nav-cards__grid">
+          <a href="gamedev.html" class="nav-card">
+            <p class="nav-card__title" data-i18n="index.cards.gamedev.title"></p>
+            <p class="nav-card__desc" data-i18n="index.cards.gamedev.desc"></p>
+          </a>
+          <a href="web.html" class="nav-card">
+            <p class="nav-card__title" data-i18n="index.cards.web.title"></p>
+            <p class="nav-card__desc" data-i18n="index.cards.web.desc"></p>
+          </a>
+          <a href="apps.html" class="nav-card">
+            <p class="nav-card__title" data-i18n="index.cards.apps.title"></p>
+            <p class="nav-card__desc" data-i18n="index.cards.apps.desc"></p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="skills__title" data-i18n="index.skills.title"></h2>
+        <p class="skills__disclaimer" data-i18n="index.skills.disclaimer"></p>
+        <div class="skills__groups">
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.programming"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">C#</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 80%"></div>
+              </div>
+              <span class="skill-bar__pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Java</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 70%"></div>
+              </div>
+              <span class="skill-bar__pct">65%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Python</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 60%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">HTML &amp; CSS</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 60%"></div>
+              </div>
+              <span class="skill-bar__pct">55%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">JavaScript</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 55%"></div>
+              </div>
+              <span class="skill-bar__pct">55%</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.databases"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">SQL / PL/SQL</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 65%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">MySQL / MariaDB</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 60%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">MongoDB / NoSQL</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 55%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.scripting"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Linux / Bash</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 60%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">PowerShell</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 55%"></div>
+              </div>
+              <span class="skill-bar__pct">55%</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.frameworks"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Unity</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 85%"></div>
+              </div>
+              <span class="skill-bar__pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">JavaFX / SceneBuilder</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 60%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.tools"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Visual Studio</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 85%"></div>
+              </div>
+              <span class="skill-bar__pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">VS Code</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 80%"></div>
+              </div>
+              <span class="skill-bar__pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Git / GitHub / SourceTree</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 75%"></div>
+              </div>
+              <span class="skill-bar__pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">NetBeans</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 70%"></div>
+              </div>
+              <span class="skill-bar__pct">70%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Eclipse</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 60%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.languages"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Español</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 100%"></div>
+              </div>
+              <span class="skill-bar__pct">100%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Català</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 90%"></div>
+              </div>
+              <span class="skill-bar__pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">English</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 75%"></div>
+              </div>
+              <span class="skill-bar__pct">75%</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills__groups skills__groups--bottom">
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.art"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Spine Pro</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 75%"></div>
+              </div>
+              <span class="skill-bar__pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Illustrator</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 65%"></div>
+              </div>
+              <span class="skill-bar__pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Blender</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 65%"></div>
+              </div>
+              <span class="skill-bar__pct">65%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Photoshop / Krita</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 60%"></div>
+              </div>
+              <span class="skill-bar__pct">60%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Character Creator 4</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 55%"></div>
+              </div>
+              <span class="skill-bar__pct">55%</span>
+            </div>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title" data-i18n="index.skills.ai"></h3>
+            <div class="skill-bar">
+              <span class="skill-bar__label">Generative AI</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 75%"></div>
+              </div>
+              <span class="skill-bar__pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <span class="skill-bar__label">AI Agents</span>
+              <div class="skill-bar__track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <div class="skill-bar__fill" style="--pct: 70%"></div>
+              </div>
+              <span class="skill-bar__pct">75%</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Daniel Román Romero &copy; <span id="footer-year"></span></p>
+  </footer>
+
+  <script src="assets/js/lang.js"></script>
+</body>
+</html>

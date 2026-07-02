@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos de desarrollo de videojuegos — Daniel Román Romero">
+  <title>GameDev — Daniel Román Romero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="navbar__nav" aria-label="Main navigation">
+      <ul class="navbar__list">
+        <li><a href="index.html" data-i18n="nav.home"></a></li>
+        <li><a href="gamedev.html" data-i18n="nav.gamedev"></a></li>
+        <li><a href="web.html" data-i18n="nav.web"></a></li>
+        <li><a href="apps.html" data-i18n="nav.apps"></a></li>
+        <li><a href="index.html#skills" data-i18n="nav.skills"></a></li>
+      </ul>
+      <button class="navbar__lang-toggle" id="lang-toggle" aria-label="Toggle language" data-i18n="nav.lang_toggle"></button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="gamedev.title"></h1>
+        <p data-i18n="gamedev.intro"></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <h3 class="video-caption" data-i18n="gamedev.video_title"></h3>
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/ykCH3SruYWg"
+            title="GameDev portfolio reel"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <hr class="section-divider">
+        <h3 class="video-caption" data-i18n="gamedev.video_caption"></h3>
+
+        <div class="project-grid project-grid--circle">
+
+          <a href="#" class="project-card--circle" id="gamedev-card-1" target="_blank" rel="noopener noreferrer">
+            <div class="project-card__img-circle">
+              <img src="assets/img/gamedev/BioHackers Portada Circulo.png" alt="Bio Hackers PC">
+            </div>
+            <p class="project-card__title">Bio Hackers PC</p>
+            <p class="project-card__year">2025</p>
+          </a>
+
+          <a href="#" class="project-card--circle" id="gamedev-card-2" target="_blank" rel="noopener noreferrer">
+            <div class="project-card__img-circle">
+              <img src="assets/img/gamedev/VR First Game Portada Circulo.png" alt="VR Full (short) Game">
+            </div>
+            <p class="project-card__title">VR Full (short) Game</p>
+            <p class="project-card__year">2025</p>
+          </a>
+
+          <a href="#" class="project-card--circle" id="gamedev-card-3" target="_blank" rel="noopener noreferrer">
+            <div class="project-card__img-circle">
+              <img src="assets/img/gamedev/First VR Prototype Portada Circulo.png" alt="First VR Prototype">
+            </div>
+            <p class="project-card__title">First VR Prototype</p>
+            <p class="project-card__year">2025</p>
+          </a>
+
+          <a href="#" class="project-card--circle" id="gamedev-card-4" target="_blank" rel="noopener noreferrer">
+            <div class="project-card__img-circle">
+              <img src="assets/img/gamedev/Parkour 3D Portada Circulo.png" alt="Parkour 3D Controller">
+            </div>
+            <p class="project-card__title">Parkour 3D Controller</p>
+            <p class="project-card__year">2024</p>
+          </a>
+
+          <a href="#" class="project-card--circle" id="gamedev-card-5" target="_blank" rel="noopener noreferrer">
+            <div class="project-card__img-circle">
+              <img src="assets/img/gamedev/Poly Go Portada Circulo.png" alt="Poly Go PC">
+            </div>
+            <p class="project-card__title">Poly Go PC</p>
+            <p class="project-card__year">2024</p>
+          </a>
+
+          <a href="#" class="project-card--circle" id="gamedev-card-6" target="_blank" rel="noopener noreferrer">
+            <div class="project-card__img-circle">
+              <img src="assets/img/gamedev/Ballsvoid Portada Circulo.png" alt="Ballsvoid">
+            </div>
+            <p class="project-card__title">Ballsvoid</p>
+            <p class="project-card__year">2022</p>
+          </a>
+
+        </div>
+
+        <div class="btn-portfolio-wrapper">
+          <a
+            href="https://sites.google.com/view/dani-rom-portfolio-esp/inicio"
+            class="btn-portfolio"
+            id="gamedev-portfolio-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="gamedev.full_portfolio"
+          ></a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Daniel Román Romero &copy; <span id="footer-year"></span></p>
+  </footer>
+
+  <script src="assets/js/lang.js"></script>
+</body>
+</html>

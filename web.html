@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos web — Daniel Román Romero">
+  <title>Web — Daniel Román Romero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="navbar__nav" aria-label="Main navigation">
+      <ul class="navbar__list">
+        <li><a href="index.html" data-i18n="nav.home"></a></li>
+        <li><a href="gamedev.html" data-i18n="nav.gamedev"></a></li>
+        <li><a href="web.html" data-i18n="nav.web"></a></li>
+        <li><a href="apps.html" data-i18n="nav.apps"></a></li>
+        <li><a href="index.html#skills" data-i18n="nav.skills"></a></li>
+      </ul>
+      <button class="navbar__lang-toggle" id="lang-toggle" aria-label="Toggle language" data-i18n="nav.lang_toggle"></button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="web.title"></h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="web-note" data-i18n="web.note"></p>
+
+        <div class="project-grid project-grid--rect">
+
+          <article class="project-card--rect">
+            <div class="project-card__thumb">
+              <img src="assets/img/web/Thumbnail_Web_Historia_Programacion.png" alt="" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title" data-i18n="web.card1.title"></h2>
+              <p class="project-card__desc" data-i18n="web.card1.desc"></p>
+              <ul class="project-card__tags">
+                <li class="tech-tag">HTML5</li>
+                <li class="tech-tag">CSS3</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://danielromanromero.github.io/Historia-de-la-Programacion/" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.demo_link"></a>
+                <a href="https://github.com/DanielRomanRomero/Historia-de-la-Programacion" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.repo_link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card--rect">
+            <div class="project-card__thumb">
+              <img src="assets/img/web/Thumbnail_Web_Generadores.png" alt="" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title" data-i18n="web.card2.title"></h2>
+              <p class="project-card__desc" data-i18n="web.card2.desc"></p>
+              <ul class="project-card__tags">
+                <li class="tech-tag">HTML5</li>
+                <li class="tech-tag">CSS3</li>
+                <li class="tech-tag">JavaScript</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://danielromanromero.github.io/Generadores-web/" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.demo_link"></a>
+                <a href="https://github.com/DanielRomanRomero/Generadores-web" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.repo_link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card--rect">
+            <div class="project-card__thumb">
+              <img src="assets/img/web/Thumbnail_Web_Habitos.png" alt="" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title" data-i18n="web.card3.title"></h2>
+              <p class="project-card__desc" data-i18n="web.card3.desc"></p>
+              <ul class="project-card__tags">
+                <li class="tech-tag">HTML5</li>
+                <li class="tech-tag">CSS3</li>
+                <li class="tech-tag">JavaScript</li>
+                <li class="tech-tag">localStorage</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://danielromanromero.github.io/Habitos-Web/" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.demo_link"></a>
+                <a href="https://github.com/DanielRomanRomero/Habitos-Web" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.repo_link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card--rect">
+            <div class="project-card__thumb">
+              <img src="assets/img/web/Thumbnail_Web_SmashBros.png" alt="" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title" data-i18n="web.card4.title"></h2>
+              <p class="project-card__desc" data-i18n="web.card4.desc"></p>
+              <ul class="project-card__tags">
+                <li class="tech-tag">React</li>
+                <li class="tech-tag">Vite</li>
+                <li class="tech-tag">Supabase</li>
+                <li class="tech-tag">Tailwind CSS</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://youtu.be/e5IUXpN5Hew" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.video_link"></a>
+                <a href="https://github.com/DanielRomanRomero/Restaurante-SmashBros" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.repo_link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card--rect">
+            <div class="project-card__thumb">
+              <img src="assets/img/web/Thumbnail_Web_Septimo_Arte.png" alt="" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title" data-i18n="web.card5.title"></h2>
+              <p class="project-card__desc" data-i18n="web.card5.desc"></p>
+              <ul class="project-card__tags">
+                <li class="tech-tag">React</li>
+                <li class="tech-tag">Vite</li>
+                <li class="tech-tag">TMDB API</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://youtu.be/vUJmYMJRg3Q" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.video_link"></a>
+                <a href="https://github.com/DanielRomanRomero/Septimo-Arte" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.repo_link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card--rect project-card--soon">
+            <div class="project-card__body project-card__body--soon">
+              <h2 class="project-card__title" data-i18n="web.card6.title"></h2>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Daniel Román Romero &copy; <span id="footer-year"></span></p>
+  </footer>
+
+  <script src="assets/js/lang.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplicaciones — Daniel Román Romero">
+  <title>Apps — Daniel Román Romero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <nav class="navbar__nav" aria-label="Main navigation">
+      <ul class="navbar__list">
+        <li><a href="index.html" data-i18n="nav.home"></a></li>
+        <li><a href="gamedev.html" data-i18n="nav.gamedev"></a></li>
+        <li><a href="web.html" data-i18n="nav.web"></a></li>
+        <li><a href="apps.html" data-i18n="nav.apps"></a></li>
+        <li><a href="index.html#skills" data-i18n="nav.skills"></a></li>
+      </ul>
+      <button class="navbar__lang-toggle" id="lang-toggle" aria-label="Toggle language" data-i18n="nav.lang_toggle"></button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="apps.title"></h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="project-grid project-grid--rect">
+
+          <article class="project-card--rect">
+            <div class="project-card__thumb">
+              <img src="assets/img/apps/Thumbail_APP_MiniCalc.png" alt="" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title" data-i18n="apps.card1.title"></h2>
+              <p class="project-card__desc" data-i18n="apps.card1.desc"></p>
+              <ul class="project-card__tags">
+                <li class="tech-tag">Java</li>
+                <li class="tech-tag">JavaFX</li>
+                <li class="tech-tag">FXML</li>
+                <li class="tech-tag">Apache Ant</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://youtu.be/F3y7VQEUAr4" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.video_link"></a>
+                <a href="https://github.com/DanielRomanRomero/Mini-Calculadora-JavaFX" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.repo_link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card--rect">
+            <div class="project-card__thumb">
+              <img src="assets/img/apps/Thumbail_APP_Agenda.png" alt="" loading="lazy">
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title" data-i18n="apps.card2.title"></h2>
+              <p class="project-card__desc" data-i18n="apps.card2.desc"></p>
+              <ul class="project-card__tags">
+                <li class="tech-tag">Java</li>
+                <li class="tech-tag">JavaFX</li>
+                <li class="tech-tag">SQLite</li>
+                <li class="tech-tag">Maven</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="https://youtu.be/tRCAvYGNLk8" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.video_link"></a>
+                <a href="https://github.com/DanielRomanRomero/Agenda-javafx" class="project-card__link" target="_blank" rel="noopener" data-i18n="web.card.repo_link"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card--rect project-card--soon">
+            <div class="project-card__body project-card__body--soon">
+              <h2 class="project-card__title" data-i18n="apps.card3.title"></h2>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Daniel Román Romero &copy; <span id="footer-year"></span></p>
+  </footer>
+
+  <script src="assets/js/lang.js"></script>
+</body>
+</html>
